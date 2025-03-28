@@ -1,43 +1,68 @@
+// File: src/app/page.tsx
+
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white flex flex-col">
+    <main className="min-h-screen bg-black text-white font-sans">
       {/* Hero Section */}
-      <section className="flex-1 flex flex-col items-center justify-center text-center p-8">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">What Comes Next?</h1>
-        <p className="text-xl md:text-2xl max-w-2xl text-zinc-300">
-          Equal parts lab, platform, and provocation. We&apos;re building tools for real humans—fitness, tech, and AI done differently.
+      <section className="flex flex-col items-center justify-center text-center px-6 py-24 bg-black">
+        <div className="w-40 h-40 mb-6">
+          <Image
+            src="/logo.png" // <- Rename your uploaded logo to logo.png and place it in /public
+            alt="What Comes Next Logo"
+            width={500}
+            height={500}
+            className="object-contain"
+          />
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold text-[#dce1de] mb-4">
+          We&apos;re Building What Comes Next
+        </h1>
+        <p className="text-lg md:text-xl text-[#9cc5a1] max-w-2xl">
+          Crowdfunded. Trainer-powered. AI-backed. It’s time for personal training to evolve.
         </p>
+        <Link
+          href="https://www.whatcomesnextllc.us/product/a-dollar/"
+          target="_blank"
+          className="mt-8 inline-block bg-[#49a078] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#216869] transition"
+        >
+          Support the Build → $1 at a Time
+        </Link>
       </section>
-  
-      {/* Mission Section */}
-      <section className="bg-zinc-900 py-16 px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">Why We&apos;re Building</h2>
-          <p className="text-lg text-zinc-300 mb-6">
-            We&apos;re tired of half-baked health apps, one-size-fits-none platforms, and trainers forced to choose between personalization and scale.
-            The Catalyst is our answer—privacy-first, AI-augmented, human-centered.
-          </p>
-          <p className="text-lg text-zinc-300">
-            Whether you&apos;re a trainer looking for better tools, or a human trying to make lasting change, we&apos;re building what comes next—for you.
-          </p>
+
+      {/* Features Section */}
+      <section className="bg-[#121212] py-20 px-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 className="text-2xl font-semibold text-[#dce1de] mb-2">Trainer Tools, Reimagined</h2>
+            <p className="text-[#9cc5a1]">
+              Our platform gives trainers superpowers—scenario planning, adaptive programs, AI-generated insights, and data they actually own.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-[#dce1de] mb-2">Health Meets Intelligence</h2>
+            <p className="text-[#9cc5a1]">
+              The Catalyst personalizes the wellness journey. Think Equinox experience, indie soul, and a data-respectful heart.
+            </p>
+          </div>
         </div>
       </section>
-  
-      {/* CTA Section */}
-      <section className="bg-zinc-950 py-16 px-8">
-        <div className="max-w-xl mx-auto text-center">
-          <h3 className="text-2xl font-semibold mb-4">Want in early?</h3>
-          <p className="text-md text-zinc-400 mb-6">
-            We&apos;re building in public, one rep at a time. Stick around. Ask questions. Join the mission.
-          </p>
-          <a
-            href="mailto:hello@whatcomesnextllc.ai"
-            className="inline-block bg-white text-zinc-900 font-semibold px-6 py-3 rounded-full hover:bg-zinc-200 transition"
-          >
-            Connect with us
-          </a>
-        </div>
+
+      {/* Call to Action */}
+      <section className="py-20 px-6 bg-[#216869] text-black text-center">
+        <h3 className="text-3xl font-bold mb-4">Join the Mission</h3>
+        <p className="text-lg mb-6 max-w-xl mx-auto">
+          What Comes Next is more than a platform—it’s a movement. The future of fitness belongs to those who build it.
+        </p>
+        <Link
+          href="mailto:hello@whatcomesnextllc.ai"
+          className="inline-block border border-black px-6 py-3 rounded-full font-semibold hover:bg-black hover:text-[#dce1de] transition"
+        >
+          Connect With Us
+        </Link>
       </section>
     </main>
-  );  
+  );
 }
