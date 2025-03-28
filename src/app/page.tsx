@@ -46,6 +46,13 @@ export default function AboutPage() {
             <p className="text-[#9cc5a1]">
               The Catalyst is a new kind of training platform. One that respects your privacy, learns from your behavior, adapts with you in real time, and gives both trainers and trainees a system that grows stronger the more you use it.
             </p>
+            <Link
+              href="https://www.whatcomesnextllc.us/the-catalyst/"
+              target="_blank"
+              className="inline-block mt-4 text-[#49a078] underline hover:text-[#9cc5a1] transition"
+            >
+              Learn more about The Catalyst →
+            </Link>
           </div>
         </div>
       </section>
