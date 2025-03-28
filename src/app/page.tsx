@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-semibold text-[#dce1de] mb-2">Where It Started</h2>
             <p className="text-[#9cc5a1]">
-              My name is Jason Rashaad. I’m a 46-year-old developer, trainer, and survivor of a near-death health event. In 2024, I began rebuilding my life by training for the Rogue Fitness 1000 lbs. Club—something Hugh Jackman did at 46. If Wolverine can do it, so can I. What started as a personal transformation quickly became something more.
+              My name is Jason Rashaad. I’m a 46-year-old developer, trainer, and survivor of a near-death health event. In 2024, I began rebuilding my life by training for the Rogue Fitness 1000 lbs. Club—something Hugh Jackman did at 46: If Wolverine can do it, so can I. What started as a personal transformation quickly became something more.
             </p>
           </div>
           <div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
         </p>
         <div className="flex justify-center space-x-4">
           <Link
-            href="mailto:hello@whatcomesnextllc.ai"
+            href="mailto:coach@whatcomesnextllc.ai"
             className="inline-block border border-[#49a078] text-[#49a078] px-6 py-3 rounded-full font-semibold hover:bg-[#49a078] hover:text-black transition"
           >
             Contact Me
