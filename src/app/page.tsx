@@ -7,10 +7,10 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black text-white font-sans">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-6 py-24 bg-black">
-        <div className="w-40 h-40 mb-6">
+      <section className="flex flex-col items-center justify-center text-center px-6 py-24 bg-black animate-fadeIn">
+        <div className="w-40 h-40 mb-6 animate-bounce">
           <Image
-            src="/logo.png" // <- Rename your uploaded logo to logo.png and place it in /public
+            src="/logo.png"
             alt="What Comes Next Logo"
             width={500}
             height={500}
@@ -33,7 +33,7 @@ export default function AboutPage() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-[#121212] py-20 px-6">
+      <section className="bg-[#121212] py-20 px-6 animate-slideIn">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-semibold text-[#dce1de] mb-2">Trainer Tools, Reimagined</h2>
@@ -46,22 +46,46 @@ export default function AboutPage() {
             <p className="text-[#9cc5a1]">
               The Catalyst personalizes the wellness journey. Think Equinox experience, indie soul, and a data-respectful heart.
             </p>
+            <Link
+              href="https://www.whatcomesnextllc.us/the-catalyst/"
+              target="_blank"
+              className="inline-block mt-4 text-[#49a078] underline hover:text-[#9cc5a1] transition"
+            >
+              Learn more about The Catalyst
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-6 bg-[#216869] text-black text-center">
+      <section className="py-20 px-6 bg-[#216869] text-black text-center animate-fadeIn">
         <h3 className="text-3xl font-bold mb-4">Join the Mission</h3>
         <p className="text-lg mb-6 max-w-xl mx-auto">
           What Comes Next is more than a platform—it’s a movement. The future of fitness belongs to those who build it.
         </p>
-        <Link
-          href="mailto:hello@whatcomesnextllc.ai"
-          className="inline-block border border-black px-6 py-3 rounded-full font-semibold hover:bg-black hover:text-[#dce1de] transition"
-        >
-          Connect With Us
-        </Link>
+        <div className="flex justify-center space-x-4">
+          <Link
+            href="mailto:hello@whatcomesnextllc.ai"
+            className="inline-block border border-black px-6 py-3 rounded-full font-semibold hover:bg-black hover:text-[#dce1de] transition"
+          >
+            Connect With Us
+          </Link>
+          <Link
+            href="https://www.instagram.com/whatcomesnextllc/"
+            target="_blank"
+            aria-label="Instagram"
+            className="inline-flex items-center justify-center w-12 h-12 bg-[#49a078] rounded-full hover:bg-[#216869] transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              className="w-6 h-6 text-black"
+            >
+              <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.5A4.26 4.26 0 0 0 3.5 7.75v8.5A4.26 4.26 0 0 0 7.75 20.5h8.5A4.26 4.26 0 0 0 20.5 16.25v-8.5A4.26 4.26 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm4.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z" />
+            </svg>
+          </Link>
+        </div>
       </section>
     </main>
   );
