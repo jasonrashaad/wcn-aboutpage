@@ -26,7 +26,7 @@ export default function AboutPage() {
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-[#dce1de] mb-4 animate-pulse">
-            We&apos;re Building What Comes Next
+            We&apos;re Building What Comes Next - The Catalyst
           </h1>
           <p className="text-lg md:text-xl text-[#9cc5a1] max-w-2xl">
             Crowdfunded. Trainer-powered. AI-backed. It’s time for personal training to evolve.
